@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <!--
+        textarea : 긴글 텍스트
+         1. rows : 가로의 텍스트 개수
+         2. cols : 세로 방향의 텍스트 개수
+
+        <input /> : 짧은글 텍스트
+        1. 속성정리
+            1.  type "text" 문자입력 , 기본값
+                type="password : 패스워드 입력 (가려진문자)
+                type="email" : 이메일 입력 (@ 포함된 텍스트)
+                type="file" : 프로필 사진
+                type="color : 색상
+                type="date
+                type="datetime-local
+                    = checked : 미리 체크된 상태
+        2. name : input에 입력된 데이터       
+        
+            2. value input에 입력된 데이터
+            3. placeholder : 입력전 가이드라인 텍스트
+            4. readonlr : 읽기모드 (입력불가)
+            5. disable : 사용금지
+            6. maxlengt : 입력텍스트 최대길이
+            7. autofocus : 자동포커스  (마우스 커버 깜박임)
+        select , option : 목록상자 , 목록상자의 항목 (아이템)           
+
+
+
+    -->
+    <h1>입력 폼</h1>
+    <from> <!--vha : 1.전송기능 (백엔드필요) 2. 입력마크업 묶음-->
+        <input/>
+        아이디 :        <input type="text"readonly/>            <br />
+        비밀번호 :      <input type="password" placeholder="비밀번호"autofocus />        <br />
+        이메일 :        <input type="email"disabled/>            <br />
+        프로필사진 :    <input type="file"/>             <br />
+       
+        색상 :          <input type="color" />           <br />
+        날짜 :          <input type="date" />           <br />
+        날짜/시간 :     <input type="datetime-local" /> <br />
+        시간 :          <input type="time" />           <br />
+        월 :            <input type="month"/>           <br />
+        주 :            <input type="week" />           <br />
+        범위 스크롤      <input type="range" />          <br />
+        숫자 입력        <input type="number"/>          <br />
+        년                    type="month
+        <h6> 원형체크 버튼(단일선택 = name속성의 이름이 동일하게)</h6>
+        <input type="radio" name="동의여부"/> 예
+        <input type="radio" name="동의여부"/> 아니오
+
+        <p> 네모 체크 버튼 (복수선택 = <name속성의 이름이 동일해도 복수)
+        <input type="checkbox" name="가입경로"/> 뉴스
+        <input type="checkbox" name="가입경로"/> 지인추천
+        <input type="checkbox" name="가입경로"/> 검색
+
+        <!--value input에 입력된 데이터-->
+
+        <p>버튼 들</p>
+        <input type="button" value="이벤트 버튼"/>  <!--버튼 (추후에 js와 이벤트 버튼으로 사용)-->
+        <input type="submit" value="폼전송버튼"/>   <!-- form 전송버튼 (추후에 백엔드 서버와 전송 할 예정)-->
+        <input type="reset" value="입력초기버튼"/>  <!--같은 form안에 있는 모든 input 초기화 / 리셋-->
+
+        <textarea rows="5" cols="7"></textarea>   <br />                   <!--긴글 텍스트-->
+
+        <select>
+            <option>네이버</option>
+            <option>카카오</option>
+            <option>네이트</option>
+
+        </select>
+
+
+
+    </from>
+</body>
+</html>
