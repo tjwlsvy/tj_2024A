@@ -1,0 +1,47 @@
+/*기본 여백 제거*/
+*{padding: 0px; margin: 0px;}
+
+/*배경색*/
+body{
+    background-color: pink;/*배경색*/
+    text-align: center; /*컨텐츠*/
+}
+
+/*제목*/
+h1{
+    font-size: 20px;            /*글꼴크기*/
+    border: 3px solid white;  /* 테두리 */
+    border-radius:  30px;       /*둥근모서리*/
+    width: 300px;               /*구역 사이즈*/
+    margin: 30px auto;          /*구역 가운데 정렬*/
+    padding: 10px;              /*안쪽 여백*/
+    }
+
+    /*이미지*/
+    img{
+        border-radius: 100px; /*사진 둥근모서리*/
+        }
+
+    /*문단*/
+    p{margin: 20px 30px; }
+
+    /*버튼들*/
+    li{
+        background-color: skyblue; /*배경색*/
+        padding: 20px;               /*안쪽여백*/
+        width: 300px;
+        margin: 15px auto;
+        list-style-type: none;      /*글머리 제거*/
+        font-weight: bold;
+        border-radius: 10px;
+    }
+
+    /*a 태그 기본값 제거*/
+    a{  
+    text-decoration: none;
+    color: white;
+    }
+
+    
+
+

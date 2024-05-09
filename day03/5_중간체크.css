@@ -1,0 +1,31 @@
+
+.booking{
+    width: 300px; height: 400px;
+
+}
+
+/*제목번호*/
+.titlenum{
+    color: orange;
+    font-size : 30px;
+    display: inline;
+}
+
+/* 내용 구획*/
+.content{ 
+    background-color: beige;
+    width: 500px;
+    padding: 30px 20px;
+}
+
+
+/*글머리 제거*/
+.content > li{
+    list-style-type: none;
+}
+
+/*특정 구역 색상 변경*/
+.point{
+    color: orange;
+    font-weight: bold;
+}

@@ -1,0 +1,16 @@
+/* CSS 주석 */
+
+/*1.*선택자*/
+*{color: red;}
+/*2. 마크업명*/
+h4{ color: yellow;}
+/*3, class속성*/
+.구역1{ color: blue;}
+/*4. id속성*/
+#구역2{ color: green;}
+
+/*5. 자손 선택자*/
+div  h3 { color: aqua;}
+/*5. 자tlr 선택자*/
+div > h3 {color: brown;}
+div > 구역3{color: black;}
