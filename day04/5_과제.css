@@ -1,0 +1,35 @@
+
+
+body{  background-color: black;}
+
+*{  list-style-type: none;
+    margin: 0px; padding: 0px;
+    text-decoration: none;
+    color: white;
+    }
+
+*{ box-sizing:  border-box;}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0px;
+    border-bottom: 1px solid gray;
+    padding: 20px;}
+
+#content{
+    width: 1280px;
+    align-items: center; }
+
+#aside > li{
+            border-bottom: 1px solid gray;
+            padding: 5px;
+            width: 1280px;}
+
+#aside > ul >li{
+    border-bottom: 2px  solid white;
+    color: white;
+    width: 10px;}
+
+#aside > li > a{
+    color: blue;}
