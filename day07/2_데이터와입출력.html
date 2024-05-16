@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+   
+<body>
+    
+    <!--
+        HTML에서 JS을 적용하는 방법
+            1. <body> 마크업에 <script> JS문법 </script>
+            2. <head> 마크업에 <script src="JS파일경로"> </script>
+
+        - 데이터 / 자료 란?
+            - 관찰 , 수집등을 통한 사실 모아 놓은것
+            - 컴퓨터 데이터 : 컴퓨터가 처리할 수 있는 문자,소리,그림 등 형태의 자료
+            
+        - JS의 데이터
+            1. 문자 : " " 또는 ` ` 또는 ' '으로 감싼 자료
+                예) '안녕하세요' , " 7 "
+            2. 숫자 : 그외
+                예) 1 , 7 , 3 
+            3. 논리/불리언 : true 또는 false
+                예) true , false
+
+        -JS의 주석
+            HTML<!-
+            CSS/**/
+            JS
+                1.한줄주석 : //
+                2.여러줄주석 : /**/
+
+        -JS의 입출력
+            - 출력
+           1. consol.log( data )                      : 개발자도구(f12)에 consol탭에 출력 / 오류 찾을때
+           2. alert( data )                           :브라우저에 알림 메세지 창
+           3. document.write( data )                  : 현재 html에 출력
+           4. document. 마크업 . innerHTML = data      :특정 html 마크업에 출력
+
+            - 입력
+            1. confirm ('메시지')                          : 브라우저에 알림 메시지 창(확인 true , 취소 false)
+            2. prompt  ('메시지')                          : 브라우저에 알림 메시지 창 ( input ,확인 true , 취소 false)
+            3. document.querySelector('선택자').innerHTML  : 특정html 마크업에 작성된 cotent 가져오기
+ 
+
+    -->
+
+    <!-- JS 코드 시작 -->
+
+    <script>
+        //1, 데이터
+            //문자
+        '안녕하세요'
+            //숫자
+        10
+            //논리
+        true
+
+        // 2. 출력 : 출력장치 / 위치 종류
+            // 1). consol.log() : 개발자도구(f12)에 consol탭에 출력 / 오류 찾을때
+        console.log('안녕하세요')
+        console.log(10)
+        console.log(false)
+
+            // 2). alert( )      :브라우저에 알림 메세지 창
+        alert('안녕하세요')
+        alert(20)
+        alert(true)
+
+            // 3). document.write( ) : 현재 html에 출력
+        document.write('안녕하세요')
+        document.write( 10+10 )
+        document.write( true )
+
+            // 4). document. 마크업 . innerHTML = 특정 html 마크업에 출력
+        document.body.innerHTML='안녕하세요4';
+
+        // 3. 입력
+            // 주로 html에서 하기 때문에 사용빈도 낮음
+            // 1) confirm : 브라우저에 알림 메시지 창(확인 true , 취소 false)
+            confirm('안녕하세요')
+            // 2) prompt : 브라우저에 알림 메시지 창 ( input ,확인 true , 취소 false))
+            prompt('안녕하세요')
+            // --- 빈도 높은 함수/기능 -----------------
+            document.querySelector('body').innerHTML
+
+
+
+    </script>
+    <!-- JS 코드 end -->
+
+
+
+</body>
+</html>
