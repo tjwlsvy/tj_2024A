@@ -1,0 +1,29 @@
+/*=========== 공통 CSS 작업 ===============*/
+*{padding: 0PX; margin: 0px; box-sizing: border-box;
+background-color: #eeecec;}
+li{list-style-type: none;}
+a{color: black; text-decoration: none;}
+/*============ 레 이 아 웃 ===============*/
+/**{border: 1px solid red;} */
+#header{height: 1280px;
+background-image: url(한솥/banner1.jpg);}
+#content{height: 1280px;}
+#footer{height: 1280px;}
+#maincontent{width: 1280px; margin: 0 auto;}
+
+/*===============콘텐츠==============*/
+
+
+#menu{
+    display: flex; 
+    justify-content: space-between;
+    padding-top: 30px; }
+
+.Hmenu{font-size: 30px;padding-bottom: 10px;
+background-color: white; }
+
+
+#menu >.AE {
+    display: flex;}
+
+#leftmenu{   }
