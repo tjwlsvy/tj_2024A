@@ -12,18 +12,7 @@ background-image: url(한솥/banner1.jpg);}
 #maincontent{width: 1280px; margin: 0 auto;}
 
 /*===============콘텐츠==============*/
+#mainmenu{width: 1280px; margin: 0 auto;   ;}
 
-
-#menu{
-    display: flex; 
-    justify-content: space-between;
-    padding-top: 30px; }
-
-.Hmenu{font-size: 30px;padding-bottom: 10px;
-background-color: white; }
-
-
-#menu >.AE {
-    display: flex;}
-
-#leftmenu{   }
+#Tmenu{display: flex;
+        }
