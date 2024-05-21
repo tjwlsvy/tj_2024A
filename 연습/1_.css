@@ -1,65 +1,82 @@
-#mainmenu{width: 1280px; margin: 0 auto;   ;}
+*{background-color: #eeecec;
+        /*border: 1px solid red*/;}
+li{list-style-type: none;}
+a{color: black; text-decoration: none;}
 
-#menu{
-    display: flex; 
-    justify-content: space-between;
-    padding: 30px 30px; 
-    ;}
+/*========================================*/
 
-#menu >.AE {
+#main{ width: 1280px;
+        height: 100%;
+        margin: 0 auto;}
+/**************상단********************************/
+#Mtop{ width: 1280px;
+        height: 140px;
         display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-content: flex-end;
+        flex-wrap: wrap;
+        padding-left: 20px;
+        background-color: white; }
+
+#Mtop > h2{background-color: white;
+                font-size: 30px;}
+
+#Mtop > ul > li > a{background-color: white;
+                font-size: 20px;
+                padding: 15px 25px;
+                }
+
+
+.Rbar{ 
+        display: flex;
+        flex-direction: row;
+        align-content: flex-end;
+        flex-wrap: wrap ;
+        margin-right: 20px;
         background-color: white;
-        padding-left: 10px;
-        margin-top: 20px;}
+        ;}
 
 
-#Lmenu{border-top: 5px solid black;
-        width: 300px;
-        background-color: white;}
+/*****************상단끝**********************************/
 
-#Lmenu > li{ background-color: white;
-            padding: 20px 0px;
-            margin: 10px 30px;}
+#Mside{ width: 300px;
+        height: 700px;}
+
+#sidebar > .LSbar{background-color: white;
+         padding-bottom: 20px;}
+
+#sidebar > ul{border-top: 5px solid black;}
+
+#sidebar > ul > li{background-color: white;
+                border-top: 1px solid black;
+                margin-right: 40px;
+                padding: 10px 20px;}
+
+#sidebar > ul > p{background-color: white;
        
-#sider{background-color: white;
-                width:300px ;}
-        
+        margin-right: 40px;
+        padding-left:10px ;}
 
-.side{ border-top: 1px solid #cfc6bc;
-        }
+#sidebar > ul > li > a{background-color: white;                      
+                      }
 
-
-.Hmenu{font-size: 30px;padding-bottom: 10px;
-        background-color: white;}
-    
-
-.Emenu{background-color: white;
-        padding-left: 10px;
-        color: #cfc6bc;
-        position: relative;}
+.sideimg {width: 300px;
+                border-bottom: 5px solid black;
+                padding-bottom: 30px;}
 
 
+/*********************왼쪽 bar 끝************************/
+#Mimg{display: flex;}
 
-.Amenu > a{color: #f2c000;
-            background-color: white;}
+#Micon{width: 850px;
+        height: 12px;  }
 
-.Emenu > a{background-color: white;
-            color: #cfc6bc;
-            padding-bottom: 10px;}
+.com{margin: 0px 20px;
+        border-bottom: 5px solid black;
+        width: 70px;}
 
+#mainicon > li > img{ width: 300px;}
 
-
-.Limg{width: 300px;
-       padding-bottom: 0px ;
-       padding-left:  0px;
-        margin-right: 10px;
-         padding-bottom: 10px ;
-        margin-bottom: 10px;}
-
-#Lmenu{margin-top: 100px; ;}
-
-#main{display: flex;}
-
-#Rmenu{margin-top: 100px;}
-
-
+#Micon > #com > h3{border-bottom: 5px solid black;
+                 width: 30px;}
