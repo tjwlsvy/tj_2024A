@@ -23,7 +23,7 @@ function remove(deleteIndex){
     일정.splice(deleteIndex,1);
     print();
 }
-
+  
 
 
 function ch( updateIndex ){
