@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   
+
+    <style>
+        *{border: 1px solid red;}
+    </style>
+</head>
+
+
+<body>
+
+    <div class="container" > <!-- container디바이스에 따라 구역 크기가 반응형 변경 -->
+        <div class="row">
+            <div class="col-3">
+                <h3>제품등록</h3>
+                <input id="list" class="form-control" type="text" placeholder="제품명을입력해주세요" aria-label="default input example">  <br/>
+                <input id="won" class="form-control" type="text" placeholder="가격 입력해주세요" aria-label="default input example"> <br/>
+                <button onclick="list()" type="button" class="btn btn-primary">제품등록</button><br/>
+                <button onclick="click()" type="button" class="btn btn-danger">3초마다 자동주문</button>
+                
+            </div>
+
+            <div class="col-9">
+                <table id="주문현황" class="table table-striped table-hover">
+                    <h3>자동 주문 현황</h3>
+                    <thead><tr><th>주문번호</th><th>제품명</th><th>가격</th><th>주문일</th></tr></thead>
+                    <tbody>
+                        <tr><td>1</td><td>코카콜라</td><td>1,000</td><td>2024-05-30 17:00</td></tr>
+                        <tr><td>2</td><td>사이다</td><td>2,000</td><td>2024-05-30 17:00</td></tr>
+                        <tr><td>3</td><td>아메리카노</td><td>3,000</td><td>2024-05-30 17:00</td></tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>    
+    </div>
+
+    <script src='7_과제.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<!--
+   - 제품 등록하고 자동 주문을 통해 주문현황 출력
+   [조건 1] : css 대신 부트스트랩 사용
+   [조건 2] : [제품 등록]버튼 클릭시 '제목명' , '가격' 입력받고 등록처리 제품 1개당 객체 1개로 설계
+                -  등록된 제품 목록/배열에 저장되고 localstorage 활용해
+   [조건 3] : [자동주문 시작] 버튼 클릭시 현재 제품목록/배열내 랜덤으로 하나의 제품/객체을 주문현황/배열에 등록
+                -주문현황 '주문번호' , '제품명' , '가격' , '주문시간' 을 저장하고 출력한다.
+                -3초마다 자동으로 주문이 등록하기.
+
+-->
