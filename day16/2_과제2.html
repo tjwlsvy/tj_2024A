@@ -4,44 +4,30 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
-    <link rel='stylesheet' type='text/css' media='screen' href='2_과제.css'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-   
-</head>
-
-<style>
-   
-    #box > div {
-      
-      width: 200px; height: 50px;
-      font-size: 20px;
-      display: flex;
-      justify-content: center; align-items: center;    
-      
-    }
-    #box > .whiteBox{
-      background-color: white;
-    }
-    #box > .blackBox{
-      background-color: black;
-      color: white;
-      text-decoration: line-through;
-    }
-
-
-</style>
-
-<body>
-    <h3> my todo list </h3>
-    <div id="input">
-        <input id="listInput" type="text"/><button onclick="add()">등록</button>
-
-    </div> 
-
-    <div id="box"> </div>
-
     
 
+
+    <style>
+
+        .red{
+            background-color: red;
+        }
+        .black{
+            background-color: black; color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <input id="할일내용" />
+    <button onclick="등록함수()">등록</button>
+
+    <div id="출력구역"> 여기가 innerHTML </div>
+
     <script src='2_과제.js'></script>
+    
 </body>
 </html>
