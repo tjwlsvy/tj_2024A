@@ -73,3 +73,9 @@ function _write(){ console.log( "wirte()");
   alert('글쓰기 성공'); 
   location.href="board.html"; // JS에서 페이지 전환할때 사용되는 속성 
 }
+
+
+
+// test
+
+

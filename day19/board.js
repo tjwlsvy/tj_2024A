@@ -29,3 +29,8 @@ function boardPrint(){
   // 3. 출력/대입 
   boardTbody.innerHTML = html ; 
 }
+
+
+
+
+
