@@ -1,0 +1,6 @@
+
+memberList = [];
+
+function signup(){
+  
+}
